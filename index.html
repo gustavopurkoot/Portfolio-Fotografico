@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio do Fotógrafo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Portfólio do Fotógrafo</h1>
+    <nav>
+      <ul>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#agendamento">Agendamento</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Galeria -->
+    <section id="galeria">
+      <h2>Galeria de Fotos</h2>
+      <div class="filtros">
+        <button onclick="filtrarGaleria('todas')">Todas</button>
+        <button onclick="filtrarGaleria('casamento')">Casamento</button>
+        <button onclick="filtrarGaleria('retratos')">Retratos</button>
+        <button onclick="filtrarGaleria('natureza')">Natureza</button>
+      </div>
+      <div class="galeria-grid">
+        <!-- Casamento -->
+        <img src="https://storage.alboom.ninja/sites/1132/media/23_fdecca07d8e0.jpg?t=1567024403" alt="Casamento" data-categoria="casamento" />
+        <img src="https://cdn0.casamentos.com.br/article-real-wedding/173/3_2/960/jpg/3105661.jpeg" alt="Casamento" data-categoria="casamento" />
+        <img src="https://storage.alboom.ninja/sites/6502/media/untitled0044191117_a1bfa4d0cadf.jpg?t=1600804422" alt="Casamento" data-categoria="casamento" />
+        <img src="https://images.pexels.com/photos/265722/pexels-photo-265722.jpeg" alt="Casamento" data-categoria="casamento" />
+
+        <!-- Retratos -->
+        <img src="https://fotografiamais.com.br/wp-content/uploads/2018/09/retrato-iluminacao-fotografia.jpg" alt="Retrato" data-categoria="retratos" />
+        <img src="https://images.pexels.com/photos/28859280/pexels-photo-28859280/free-photo-of-homem-estiloso-de-oculos-de-sol-encostado-na-parede.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Retrato" data-categoria="retratos" />
+        <img src="https://images.pexels.com/photos/31452872/pexels-photo-31452872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Retrato" data-categoria="retratos" />
+        
+        <!-- Natureza -->
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Natureza" data-categoria="natureza" />
+        <img src="https://images.unsplash.com/photo-1496483648148-47c686dc86a8" alt="Natureza" data-categoria="natureza" />
+        <img src="https://images.squarespace-cdn.com/content/v1/5b51083c3e2d091347d2e6fe/1638462278514-4YWH839J25OURZLJUI5C/mike-benna-SBiVq9eWEtQ-unsplash.jpg" alt="Natureza" data-categoria="natureza" />
+      </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendamento">
+      <h2>Agende sua Sessão</h2>
+      <form>
+        <label>Nome:</label>
+        <input type="text" required />
+
+        <label>Email:</label>
+        <input type="email" required />
+
+        <label>Tipo de Ensaio:</label>
+        <select required>
+          <option value="">Selecione</option>
+          <option value="casamento">Casamento</option>
+          <option value="retratos">Retratos</option>
+          <option value="natureza">Natureza</option>
+        </select>
+
+        <label>Data:</label>
+        <input type="date" required />
+
+        <label>Horário:</label>
+        <input type="time" required />
+
+        <button type="submit">Agendar</button>
+      </form>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+      <h2>Blog de Fotografia</h2>
+      <div class="blog-container">
+        <article>
+          <img src="https://images.pexels.com/photos/31544959/pexels-photo-31544959/free-photo-of-fotografo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dica de fotografia" />
+          <h3>5 Dicas para Ensaios ao Ar Livre</h3>
+          <p>Descubra como aproveitar a luz natural para obter as melhores fotos...</p>
+        </article>
+        <article>
+          <img src="https://images.pexels.com/photos/8459410/pexels-photo-8459410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fotografia de casamento" />
+          <h3>Como se Preparar para um Ensaio de Casamento</h3>
+          <p>Saiba o que esperar, como se vestir e como tirar o melhor proveito da sessão...</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Portfólio do Fotógrafo. Todos os direitos reservados.</p>
+    <p>Instagram | WhatsApp | Email</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
